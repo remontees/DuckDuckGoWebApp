@@ -12,5 +12,5 @@ var Unity = external.getUnityObject(1.0);
 Unity.init({name: "DuckDuckGo",
             iconUrl: "http://duckduckgo.com/assets/logo_homepage.normal.v102.png",
             homepage: 'http://duckduckgo.com'
-            domain: 'duckduckgo.com'
+            domain: 'duckduckgo.com',
             onInit: unityReady});
