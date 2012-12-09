@@ -1,3 +1,9 @@
+// ==UserScript==// @include        http://duckduckgo.com
+// @require        utils.js
+// ==/UserScript==
+
+var Unity = external.getUnityObject(1.0);
+
 function unityReady() {
     Unity.addAction("http://duckduckgo.com/", function () {
        Unity.Notification.showNotification("Nouvelle recherche", "Vous vous apprêtez à lancer une nouvelle recherche.");
@@ -7,7 +13,6 @@ function unityReady() {
     });
     Unity.Launcher.addAction("Internet", internetActionCallback);
 }
-var Unity = external.getUnityObject(1.0); 
 
 Unity.init({name: "DuckDuckGo",
             iconUrl: "http://duckduckgo.com/assets/logo_homepage.normal.v102.png",
