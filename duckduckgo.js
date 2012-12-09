@@ -1,4 +1,5 @@
-// ==UserScript==// @include        http://duckduckgo.com
+// ==UserScript==
+//@include        http://duckduckgo.com
 // @require        utils.js
 // ==/UserScript==
 
