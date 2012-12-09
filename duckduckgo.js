@@ -19,4 +19,4 @@ Unity.init({name: "DuckDuckGo",
             iconUrl: "http://duckduckgo.com/assets/logo_homepage.normal.v102.png",
             homepage: 'http://duckduckgo.com',
             domain: 'duckduckgo.com',
-            onInit: unityReady});
+            onInit: wrapCallback(unityReady)});
